@@ -1,0 +1,82 @@
+$border: rgba(128, 128, 128, 0.5);
+$color-web: red;
+$color-letras: black ;
+$fondo: white;
+$border-div: 1px;
+$border-separation: 2px;
+
+/*-------HEADER------*/
+header{
+    border-bottom: $border-separation $border solid;
+}
+/*-------MAIN------*/
+.background-jordan {
+    color: $fondo;
+}
+.letrastitulo{
+    color: $color-web;
+}
+%productos-div{
+    height: 500px;
+    width: 375px;
+    text-align: center;
+    transition: 0.5s; 
+    -moz-box-shadow: 6px 9px 9px 1px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 6px 9px 9px 1px rgba(0,0,0,0.54);
+    box-shadow: 6px 9px 9px 1px rgba(0,0,0,0.54);
+    border: $border-div $border solid;
+    border-radius: 5px;
+    pointer-events: auto;
+    margin-bottom: 25px;
+}
+%productos-div-h3{
+    margin-top: 15px;
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+    font-family: 'Poppins', Light; 
+    font-weight: 500; 
+}
+%productos-div-p{
+    display: inline-block;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+    padding:15px;
+    margin-top: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-top: $border-separation $border solid;
+}
+.todos-productos{
+    a{
+        div{
+            margin-left: 25px;
+            @extend %productos-div;
+            h3{
+                @extend %productos-div-h3;
+            }
+            p{
+                @extend %productos-div-p;
+            }
+        }
+    }
+}
+.productos{
+    div{
+        @extend %productos-div;
+        h3{
+            @extend %productos-div-h3;
+        }
+        p{
+            @extend %productos-div-p;
+        }
+    }
+}
+
+/*-------FOOTER------*/
+footer{
+    border-top: $border-separation $border solid;
+}

@@ -1,0 +1,93 @@
+@media screen and (max-width: 1919px) {
+    .todos-productos {
+            div{
+                margin-left: 15px;
+            }
+            div:hover{
+                transform: none;
+                transition: none;
+            }
+        }
+    .productos-para-vender{
+        text-align: center;
+        margin-left: 0;
+    }
+    .productos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        a{
+            div{
+                margin-top: 50px;
+                margin-left: 15px;
+            }
+            div:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+                display: grid;
+                grid-template-columns: initial;
+                grid-template-rows: initial;
+                grid-template-areas: initial;
+                width: 375px;
+                height: 500px;
+                img, h3, p{
+                    transform: none !important;
+                    transition: none !important;
+                }
+                img {
+                    width: 363px !important;
+                    height: 323.69px !important;
+                    margin: 5px !important;
+                    grid-area: initial !important;
+                }
+                h3 {
+                    grid-area: initial !important;
+                    margin-top: 12px;
+                }
+                p {
+                    margin-top: 0;
+                    grid-area: initial !important;
+                    transition: none !important;
+                    border-top: rgba(128, 128, 128, 0.5) 2px solid;
+                }
+            }
+        }
+    }
+    .nuestro-inv{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .background-jordan{
+        background: none;
+        background-image: url(../img/jordans-fondo-500px.jpg);
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        .bienvenidos{
+            width: 350px;
+            color: white;
+            margin-left: 75px;
+            margin-top: -100px;
+            h1{
+                margin-bottom: 150px;
+            }
+            a{
+                font-size: 20px;
+            }
+            a:hover{
+                font-size: 25px;
+            }
+        }
+    }
+    .productos-para-vender{
+        text-align: center;
+        display: block;
+        margin-left:50px ;
+    }
+    .registramiento{
+        width: 100px;
+        border: 10px;
+    }
+}

@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@100;300&display=swap");
+header {
+  height: 100px;
+  background-color: white; }
+  header .bg-body-tertiary {
+    --bs-bg-opacity: none;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)); }
+    header .bg-body-tertiary div {
+      padding-top: 8px; }
+      header .bg-body-tertiary div .navbar-brand {
+        font-size: 35px;
+        margin-left: 5px; }
+      header .bg-body-tertiary div a {
+        margin-top: 5px;
+        padding-left: 35px; }
+      header .bg-body-tertiary div .active {
+        margin-left: 45px; }
+      header .bg-body-tertiary div .navbar-text {
+        margin-right: 10px;
+        font-size: 20px;
+        color: black; }
+      header .bg-body-tertiary div .nav-item {
+        margin-left: 5px;
+        padding-top: 3px;
+        font-weight: 600;
+        font-size: 18px; }
+      header .bg-body-tertiary div .carrito {
+        width: 60px;
+        height: 60px;
+        border: none;
+        background-color: white;
+        margin-right: 30px; }
+        header .bg-body-tertiary div .carrito img {
+          height: 40px;
+          margin-bottom: 8px; }
+        header .bg-body-tertiary div .carrito #contador-carrito {
+          color: white;
+          background-color: red;
+          border: 4px solid red;
+          border-radius: 15px; }
+
+.nuestro-inv, .productos-para-vender {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 35px; }
+
+.background-jordan {
+  background-image: url(../img/jordans.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+  margin-top: 0; }
+  .background-jordan .bienvenidos {
+    width: 425px;
+    margin-left: 200px;
+    padding-top: 200px;
+    text-align: center; }
+    .background-jordan .bienvenidos h1 {
+      text-decoration: none;
+      font-size: 35px;
+      margin-bottom: 25px; }
+    .background-jordan .bienvenidos h2 {
+      font-family: 'Poppins', Thin;
+      font-weight: 300;
+      font-size: 25px;
+      margin-bottom: 60px; }
+    .background-jordan .bienvenidos a {
+      text-decoration: none;
+      color: white;
+      padding: 25px;
+      font-size: 25px;
+      background-color: rgba(0, 110, 255, 0.4);
+      border: #006eff 2px solid;
+      border-radius: 50px;
+      transition: 0.5s; }
+    .background-jordan .bienvenidos a:hover {
+      font-size: 30px;
+      background-color: rgba(137, 43, 226, 0.4);
+      border: #892be2 2px solid;
+      transition: 0.5s;
+      transform: scale(1.5); }
+
+.productos {
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  .productos a {
+    pointer-events: none;
+    height: 500px;
+    margin-bottom: 75px; }
+    .productos a div img {
+      width: 363px;
+      padding: 0;
+      margin: 5px;
+      height: 65%;
+      border-radius: 5px; }
+  .productos div:hover {
+    transition-property: width;
+    transition: 1.5s;
+    transition-timing-function: ease;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-template-areas: "imagen titulo" "imagen descripcion";
+    width: 1750px; }
+    .productos div:hover img {
+      width: 600px;
+      height: 470px;
+      margin: 15px;
+      grid-area: imagen;
+      transition: 1.5s; }
+    .productos div:hover h3 {
+      grid-area: titulo;
+      transition: 1.5s; }
+    .productos div:hover p {
+      grid-area: descripcion;
+      border-top: none;
+      transition: 1.5s; }
+
+.todos-productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .todos-productos a {
+    height: 500px;
+    margin-bottom: 75px; }
+    .todos-productos a .jordan {
+      width: 360px;
+      padding: 0;
+      margin: 5px;
+      height: 65%;
+      border-radius: 5px; }
+    .todos-productos a .alcarrito {
+      width: 170px;
+      position: absolute;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      border-radius: 15px;
+      margin-left: 105px;
+      margin-bottom: 200px; }
+    .todos-productos a div:hover {
+      transform: scale(1.05);
+      transition: 0.5s; }
+
+.apartados-productos {
+  margin-left: 50px;
+  margin-bottom: 75px;
+  font-size: 18px; }
+  .apartados-productos a {
+    color: blueviolet; }
+  .apartados-productos a:hover {
+    color: blue;
+    text-decoration: underline; }
+
+section {
+  display: flex;
+  justify-content: center; }
+  section .registramiento {
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border: 2px rgba(128, 128, 128, 0.5) solid;
+    display: flex;
+    flex-direction: column; }
+    section .registramiento h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 30px; }
+    section .registramiento .nombre {
+      margin-top: 50px; }
+    section .registramiento .nombre, section .registramiento .apellido, section .registramiento .email, section .registramiento .contrasena {
+      margin-left: 20px;
+      margin-bottom: 20px; }
+    section .registramiento .input {
+      width: 90%;
+      border-radius: 5px;
+      border: 2px rgba(0, 0, 255, 0.349) solid; }
+    section .registramiento p {
+      margin-left: 20px;
+      margin-top: 15px; }
+      section .registramiento p a {
+        text-decoration: underline; }
+    section .registramiento .enviar {
+      position: absolute;
+      margin-left: 400px;
+      margin-top: 10px; }
+
+.sobrenosotros {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 35px; }
+
+.fundacion {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px; }
+
+.texto-info {
+  font-size: large; }
+
+.h3-acercade, .texto-info {
+  margin-left: 10px; }
+
+.ultimo {
+  margin-bottom: 50px; }
+
+.modal-active {
+  visibility: visible;
+  z-index: 5; }
+
+.modal-carrito {
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  transition: all .5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; }
+
+.modal-active .modal-carrito {
+  margin-top: 0; }
+
+.modal-carrito h3 {
+  color: #e14c41;
+  margin-top: 30px;
+  padding-bottom: 10px; }
+
+.modal-carrito #btn-cerrar-carrito {
+  position: absolute;
+  top: 22px;
+  right: 15px;
+  font-size: 20px;
+  color: red;
+  border: none;
+  background-color: white; }
+
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer; }
+
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none; }
+
+.modal-carrito .producto-precio {
+  padding-top: 10px; }
+
+.card .card-image .card-title {
+  color: #e14c41;
+  position: unset; }
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.productoEnCarrito:hover {
+  border-left: 5px solid #e14c41; }
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px; }
+
+.boton-eliminar:hover {
+  cursor: pointer; }
+
+.boton-eliminar:focus {
+  outline: none; }
+
+.vaciarcarrito {
+  background-color: white;
+  color: black;
+  border: rgba(255, 0, 0, 0.8) 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 1050px;
+  position: absolute; }
+
+.vaciarcarrito:hover {
+  font-size: 18px;
+  transition: 0.25s;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white; }
+
+.notificaion {
+  position: absolute;
+  margin-bottom: 0px; }
+
+footer {
+  flex-wrap: wrap; }
+  footer h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px; }
+  footer .ig {
+    margin-left: 50px; }
+  footer p {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 50px; }
+
+header nav ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+/*-------HEADER------*/
+header {
+  border-bottom: 2px rgba(128, 128, 128, 0.5) solid; }
+
+/*-------MAIN------*/
+.background-jordan {
+  color: white; }
+
+.letrastitulo {
+  color: red; }
+
+.todos-productos a div, .productos div {
+  height: 500px;
+  width: 375px;
+  text-align: center;
+  transition: 0.5s;
+  -moz-box-shadow: 6px 9px 9px 1px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 6px 9px 9px 1px rgba(0, 0, 0, 0.54);
+  box-shadow: 6px 9px 9px 1px rgba(0, 0, 0, 0.54);
+  border: 1px rgba(128, 128, 128, 0.5) solid;
+  border-radius: 5px;
+  pointer-events: auto;
+  margin-bottom: 25px; }
+
+.todos-productos a div h3, .productos div h3 {
+  margin-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: 'Poppins', Light;
+  font-weight: 500; }
+
+.todos-productos a div p, .productos div p {
+  display: inline-block;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 25px;
+  padding: 15px;
+  margin-top: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-top: 2px rgba(128, 128, 128, 0.5) solid; }
+
+.todos-productos a div {
+  margin-left: 25px; }
+
+/*-------FOOTER------*/
+footer {
+  border-top: 2px rgba(128, 128, 128, 0.5) solid; }
+
+@media screen and (max-width: 1919px) {
+  .todos-productos div {
+    margin-left: 15px; }
+  .todos-productos div:hover {
+    transform: none;
+    transition: none; }
+  .productos-para-vender {
+    text-align: center;
+    margin-left: 0; }
+  .productos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    .productos a div {
+      margin-top: 50px;
+      margin-left: 15px; }
+    .productos a div:hover {
+      transform: scale(1.05);
+      transition: 0.5s;
+      display: grid;
+      grid-template-columns: initial;
+      grid-template-rows: initial;
+      grid-template-areas: initial;
+      width: 375px;
+      height: 500px; }
+      .productos a div:hover img, .productos a div:hover h3, .productos a div:hover p {
+        transform: none !important;
+        transition: none !important; }
+      .productos a div:hover img {
+        width: 363px !important;
+        height: 323.69px !important;
+        margin: 5px !important;
+        grid-area: initial !important; }
+      .productos a div:hover h3 {
+        grid-area: initial !important;
+        margin-top: 12px; }
+      .productos a div:hover p {
+        margin-top: 0;
+        grid-area: initial !important;
+        transition: none !important;
+        border-top: rgba(128, 128, 128, 0.5) 2px solid; }
+  .nuestro-inv {
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .background-jordan {
+    background: none;
+    background-image: url(../img/jordans-fondo-500px.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 600px; }
+    .background-jordan .bienvenidos {
+      width: 350px;
+      color: white;
+      margin-left: 75px;
+      margin-top: -100px; }
+      .background-jordan .bienvenidos h1 {
+        margin-bottom: 150px; }
+      .background-jordan .bienvenidos a {
+        font-size: 20px; }
+      .background-jordan .bienvenidos a:hover {
+        font-size: 25px; }
+  .productos-para-vender {
+    text-align: center;
+    display: block;
+    margin-left: 50px; }
+  .registramiento {
+    width: 100px;
+    border: 10px; } }
