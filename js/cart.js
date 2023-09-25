@@ -68,7 +68,6 @@ const validarProductoEnCarrito = (id) => {
       cantidadElement.innerText = `Cantidad: ${productoExistente.cantidad}`;
     }
   }
-
   guardarCarritoStorage();
   pintarTotalesCarrito();
 };
